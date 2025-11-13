@@ -1,0 +1,319 @@
+.emissions-monitor {
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Sector Grid */
+.sector-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.sector-card {
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 1.5rem;
+  border-left: 4px solid #ef4444;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.sector-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.sector-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.sector-icon {
+  width: 48px;
+  height: 48px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ef4444;
+}
+
+.sector-info h3 {
+  font-size: 1.125rem;
+  color: #1f2937;
+  margin: 0 0 0.25rem 0;
+}
+
+.sector-emissions {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ef4444;
+}
+
+.sector-progress {
+  margin-bottom: 1rem;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin-bottom: 0.25rem;
+}
+
+.progress-values {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin-top: 0.25rem;
+}
+
+.sector-reduction {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #10b981;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+/* Sector Chart */
+.sector-chart {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 2px solid #e5e7eb;
+}
+
+.sector-chart h3 {
+  font-size: 1.25rem;
+  color: #1f2937;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Local Data Table */
+.local-data-table {
+  margin-top: 2rem;
+  overflow-x: auto;
+}
+
+.local-data-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.local-data-table thead {
+  background: #f9fafb;
+}
+
+.local-data-table th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: #374151;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.local-data-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.local-data-table .state-name {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.reduction-cell {
+  color: #10b981;
+  font-weight: 600;
+}
+
+/* Calculator */
+.calculator-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.calculator-card h2,
+.calculator-card .card-subtitle {
+  color: white;
+}
+
+.calculator {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+}
+
+.calculator-input {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.calculator-input label {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.calculator-input input {
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.125rem;
+  background: white;
+  color: #1f2937;
+}
+
+.calculator-input input:focus {
+  outline: 2px solid #fbbf24;
+}
+
+.calculate-btn {
+  padding: 1rem 2rem;
+  background: #fbbf24;
+  color: #1f2937;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.calculate-btn:hover {
+  background: #f59e0b;
+  transform: translateY(-2px);
+}
+
+.calculator-results {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.result-card {
+  background: white;
+  color: #1f2937;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.result-label {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.result-value {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ef4444;
+  margin-bottom: 0.5rem;
+}
+
+.result-note {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  margin-top: 0.5rem;
+}
+
+/* Insights */
+.insights-card {
+  background: #f9fafb;
+}
+
+.insights-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.insight {
+  display: flex;
+  gap: 1rem;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #3b82f6;
+}
+
+.insight-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.insight-icon.success {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.insight-icon.warning {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.insight-icon.info {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.insight-content h3 {
+  font-size: 1.125rem;
+  color: #1f2937;
+  margin: 0 0 0.5rem 0;
+}
+
+.insight-content p {
+  color: #6b7280;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .emissions-monitor {
+    padding: 1rem;
+  }
+
+  .section-header h1 {
+    font-size: 1.75rem;
+  }
+
+  .sector-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .calculator-results {
+    grid-template-columns: 1fr;
+  }
+
+  .local-data-table {
+    font-size: 0.75rem;
+  }
+
+  .local-data-table th,
+  .local-data-table td {
+    padding: 0.5rem;
+  }
+}

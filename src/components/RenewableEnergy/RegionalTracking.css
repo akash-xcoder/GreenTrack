@@ -1,0 +1,323 @@
+.regional-tracking {
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.section-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.section-header h1 {
+  font-size: 2.5rem;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.section-header p {
+  color: #6b7280;
+  font-size: 1.1rem;
+}
+
+.card-subtitle {
+  color: #6b7280;
+  margin-bottom: 1.5rem;
+}
+
+/* Table */
+.table-container {
+  overflow-x: auto;
+}
+
+.regional-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.regional-table thead {
+  background: #f9fafb;
+}
+
+.regional-table th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: #374151;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.regional-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.regional-table tbody tr {
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.regional-table tbody tr:hover {
+  background: #f9fafb;
+}
+
+.regional-table tbody tr.selected {
+  background: #dbeafe;
+}
+
+.state-name {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.highlight {
+  font-weight: 600;
+  color: #10b981;
+}
+
+.utilization-bar {
+  position: relative;
+  height: 24px;
+  background: #e5e7eb;
+  border-radius: 4px;
+  overflow: hidden;
+  min-width: 100px;
+}
+
+.utilization-fill {
+  position: absolute;
+  height: 100%;
+  background: linear-gradient(90deg, #10b981, #3b82f6);
+  transition: width 0.3s;
+}
+
+.utilization-bar span {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  line-height: 24px;
+  font-weight: 600;
+  font-size: 0.75rem;
+  color: #1f2937;
+  z-index: 1;
+}
+
+.growth-cell {
+  color: #10b981;
+  font-weight: 600;
+}
+
+/* Selected Region Card */
+.selected-region-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.selected-region-card h2 {
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.region-details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+}
+
+.detail-icon {
+  color: #fbbf24;
+}
+
+.detail-item label {
+  display: block;
+  font-size: 0.875rem;
+  opacity: 0.9;
+  margin-bottom: 0.25rem;
+}
+
+.detail-item value {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.detail-item value.positive {
+  color: #34d399;
+}
+
+.energy-mix {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.energy-mix h3 {
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+/* Projects */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card {
+  background: #f9fafb;
+  border-radius: 8px;
+  padding: 1.5rem;
+  border-left: 4px solid #10b981;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.project-header h3 {
+  font-size: 1.125rem;
+  color: #1f2937;
+  margin: 0;
+  flex: 1;
+}
+
+.status-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.project-type {
+  color: #6b7280;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.project-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.project-stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-stat label {
+  font-size: 0.75rem;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.25rem;
+}
+
+.project-stat value {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+/* Financing */
+.financing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.financing-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s;
+}
+
+.financing-card:hover {
+  transform: translateY(-4px);
+}
+
+.financing-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.financing-detail {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+  font-size: 0.875rem;
+}
+
+.financing-detail label {
+  opacity: 0.9;
+}
+
+.financing-detail span {
+  font-weight: 600;
+}
+
+.subsidy-badge {
+  background: rgba(16, 185, 129, 0.2);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+.financing-detail .amount {
+  color: #fbbf24;
+  font-size: 1.125rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .regional-tracking {
+    padding: 1rem;
+  }
+
+  .section-header h1 {
+    font-size: 1.75rem;
+  }
+
+  .regional-table {
+    font-size: 0.75rem;
+  }
+
+  .regional-table th,
+  .regional-table td {
+    padding: 0.5rem;
+  }
+
+  .projects-grid,
+  .financing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .region-details-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
