@@ -3,7 +3,7 @@ import { Send, Loader2, Sparkles, Leaf, Zap, TrendingUp, Home } from 'lucide-rea
 import './AIAssistant.css';
 
 // OpenRouter API Configuration
-const OPENROUTER_API_KEY = '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';
+const OPENROUTER_API_KEY = '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';
 const OPENROUTER_API_URL = 'https://openrouter.ai/api/v1/chat/completions';
 
 // Local fallback responses for offline/error scenarios
